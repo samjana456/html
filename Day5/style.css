@@ -1,0 +1,23 @@
+p{
+    font-size: xx-small;
+    align-content: center;
+}
+.column1{
+
+  font-size: smaller;
+  padding-right: 30px;
+  
+  
+}
+.column3{
+  
+    font-size: smaller;
+    padding-left: 60px;
+    
+}
+.navigation{
+  size: 1px;
+}
+#bbc{
+ font-size: large;
+}
