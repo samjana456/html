@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* selector{
+        <rules of css syntax>
+        property:vlaue;
+       } */
+        h1 {
+            color: aquamarine;
+        }
+
+        img {
+            height: 100px;
+        }
+        #para{
+            color: rebeccapurple;
+        }
+        .header,.header1{
+            /* grouping */
+            color: burlywood;
+        }
+        /* #header{
+            font-size: 21px;
+        } */
+         .header1{
+           font-size: 50px;
+         }
+         body{
+            background: pink;
+            margin: 0;
+         }
+         *{
+            /* universal */
+            color: red;
+         }
+        .header1:hover{
+            /* pseudo selector */
+            color: yellow;
+            cursor: pointer;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: lightblue;
+            transition: all 5s;
+        }
+        .box:hover{
+            background-color: burlywood;
+            cursor: grab;
+        }
+        .box, .minibox{
+            color: aqua;
+        }
+        .smallbox{
+            font-size: x-large;
+        }
+        a{
+            text-decoration: double;
+            color: blue;
+            
+            
+        }
+        .span{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Types of selector</h1>
+
+    <img src="./pexels-alex-dos-santos-305643819-18280489.jpg" alt="">
+    <div class="header">
+        this changs from selector.
+    </div>
+    <div class="header1" >
+        this changs from selector.
+    </div>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque adipisci magni ducimus molestiae
+        quasi ut, consectetur ipsa unde ipsum inventore ad quae numquam facere aliquam placeat commodi nihil? Pariatur.
+    </p>
+    <p id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque adipisci magni ducimus molestiae
+        quasi ut, consectetur ipsa unde ipsum inventore ad quae numquam facere aliquam placeat commodi nihil? Pariatur.
+    </p>
+    <!-- <div class="box">
+
+    </div> -->
+    <div class="box">
+        box content
+        <div class="minibox">
+            mini box content
+            <div class="smallbox">
+                smmall box
+            </div>
+        </div>
+    </div>
+<div class="smallbox">
+    smbox
+</div>
+<span>
+    <a href="">google</a>
+</span>
+<div>
+    <span> go mind risers</span>
+</div>
+</body>
+
+</html>

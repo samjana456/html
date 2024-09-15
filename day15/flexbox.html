@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-content: center; */
+            /* align-content: end; */
+            /* align-content: start; */
+            /* align-content: space-around; */
+            align-content: space-between;
+            background-color: aqua;
+            height: 400px;
+            /* flex-wrap: wrap; */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+            border: 2px solid red;
+            /* gap: 1rem; */
+            /* row-gap: 1rem; */
+            /* flex-direction: column; */
+            flex-direction: row;
+            /* align-items: center; */
+            
+        }
+        .chid{
+            height: 100px;
+            border: 2px solid black;
+            width: 150px;
+            text-align: center;
+            align-content: center;
+        }
+        #child1{
+            order: 5;
+            background-color: red;
+            /* align-self: center; */
+            /* align-self: stretch; */
+            /* align-self: start; */
+        }
+        #child2{
+            background-color: antiquewhite;
+            order: 2;
+            /* flex-grow: 500; */
+            flex-shrink: 2;
+           
+        }
+        #child3{
+            order: 3;
+            /* flex-grow: 5; */
+            flex-shrink: 5;
+            
+        }
+        #child4{
+            order: 4;
+            
+        }
+        #child5{
+            flex-grow: 1;
+            order: 5;
+            
+        }
+        #child6{
+            order: 6;
+            
+        }
+        #child7{
+            order: 7;
+            
+        }
+        #child8{
+            order: 8;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- ctrl shit l -->
+    <!-- <h2>parent properties</h2>
+    <ul>
+        <li>display</li>
+        <li>gap</li>
+        <li>flex-wrap</li>
+        <li>felx-direction</li>
+        <li>justify content(row)</li>
+        <li>align- items(column)</li>
+        <li>align -content</li>
+    </ul>
+    <h2>Children property</h2>
+    <ul>
+    <li>flex-grow</li>
+    <li>flex-shrink</li>
+    <li>align-self</li>
+    <li>order</li>
+</ul> -->
+
+    <div class="parent">
+        <div class="chid"id="child1">1</div>
+        <div class="chid"id="child2">2</div>
+        <div class="chid"id="child3">3</div>
+        <div class="chid"id="child4">4</div>
+        <div class="chid"id="child5">5</div>
+        <div class="chid"id="child6">6</div>
+        <div class="chid"id="child7">7</div>
+        <div class="chid"id="child8">8</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- attribute selector syntax -->
+
+    <!-- selector[attribute=value] -->
+    <style>
+        img[alt="image"] {
+            height: 150px;
+        }
+
+        .image2 {
+            height: 150px;
+        }
+
+        a[target="_blank"] {
+            color: aqua;
+        }
+
+        li:first-child {
+            color: blue;
+        }
+
+        li:last-child {
+            color: green;
+        }
+
+        li:nth-child(2){
+            color: brown;
+        }
+         p:hover::after{
+            content: "After";
+            font-size: 2rem;
+            color: blue;
+         }
+         p::before{
+            content: "The";
+            font-size: 3rem;
+            color: red;
+         }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum tenetur ex id, earum quo illum quam omnis
+        itaque odio sed? Recusandae tenetur amet ea, odio atque quibusdam ipsum aut dolorem porro eveniet libero? Sint
+        soluta eius saepe provident neque corrupti numquam optio voluptas, porro inventore molestiae, laborum, quia
+        nobis eaque.
+    </p>
+    <ul>
+        <li>UI/UX</li>
+        <li>python</li>
+        <li>bjango</li>
+        <li>bjango</li>
+
+
+    </ul>
+
+    <img src="https://images.unsplash.com/photo-1723965453045-b025e5b3af13?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="image">
+    <div class="image2">
+        <img src="https://images.unsplash.com/photo-1724277228191-0cf4c80ee56f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image2">
+    </div>
+
+    <a href="https://www.google.com/" target="_blank">go google</a>
+    <a href=""></a>
+
+
+
+</body>
+
+</html>

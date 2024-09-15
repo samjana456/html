@@ -6,18 +6,27 @@ p{
 
   font-size: smaller;
   padding-right: 30px;
-  
+ align-content: first baseline;
+ /* position: sticky; */
+ 
+ /* background-color: green; */
+ 
+display: flex;
+flex-direction: column;
   
 }
 .column3{
+  /* background-color: antiquewhite; */
+  display: flex;
+  
   
     font-size: smaller;
-    padding-left: 60px;
+    padding-left: 5px;
     
 }
-.navigation{
-  size: 1px;
-}
-#bbc{
- font-size: large;
+
+
+.one{
+  display: flex;
+  justify-content: space-between;
 }

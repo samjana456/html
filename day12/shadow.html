@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            /* border: 2px solid black; */
+            /* box-shadow: x-offset y-offset blurr spread color; */
+            box-shadow:1px 2px 6px 2px gray;
+            border-radius: 10px;
+        }
+        .box1{
+            
+            height: 150px;
+            width: 150px;
+            /* border: 2px solid black; */
+            /* box-shadow: x-offset y-offset blurr spread color; */
+            box-shadow:  inset -1px -3px 11px 0px gray;
+            border-radius: 10px;
+        }
+        .sunmoon{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .sun{
+            height: 100px;
+            width: 100px;
+            border-radius:100%;
+            
+            /* box-shadow: 2px -2px 14px 14px orangered; */
+             box-shadow: inset 2px -2px 20px 20px orangered
+        }
+        .moon{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: inset 20px -9px 11px 2px gray;
+        }
+        
+    </style>
+</head>
+<body>
+  <ul>
+    <li>box shadow</li>
+    <li>text shadow</li>
+  </ul>  
+<div class="box">
+
+</div>
+<div class="box1">
+
+</div><hr>
+<div class="sunmoon">
+    <div class="sun">
+
+    </div>
+    <div class="moon">
+    
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

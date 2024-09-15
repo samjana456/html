@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pexels</title>
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            column-gap: 1.5rem;
+            /* background-color: aqua; */
+            align-items: center;
+
+        }
+
+        .galerycat {
+            font-size: 12px;
+            color: gray;
+        }
+
+        .galerycat:hover {
+            cursor: pointer;
+
+        }
+
+
+        h2 {
+            font-size: 16px;
+            color: gray;
+        }
+
+        li:first-child {
+            background-color: black;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 3rem;
+        }
+
+        li:nth-child(1):hover {
+            background-color: gray;
+        }
+
+        li:nth-child(2):hover {
+            color: black;
+        }
+
+        li:nth-child(3):hover {
+            color: black;
+        }
+
+        li:nth-child(4):hover {
+            color: black;
+        }
+
+        .subcat {
+            display: flex;
+            justify-content: space-between;
+
+            /* background-color: aqua; */
+        }
+
+        .items {
+            /* background-color: aqua; */
+            height: 100px;
+            width: 100px;
+        }
+
+        .items img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+
+
+
+
+        }
+
+        select {
+            font-size: 10px;
+            height: 20px;
+            width: 80px;
+            border-color: #dfdfe0;
+            
+            border-radius: 5px;
+
+
+
+        }
+
+        select:hover {
+            border-color: black;
+            cursor: pointer;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            /* width: 50px; */
+            /* height: 600px; */
+            /* background-color: antiquewhite; */
+            overflow: hidden;
+            justify-content: center;
+            gap: 0.5rem;
+            
+
+        }
+        header{
+             background-image: url("https://images.pexels.com/photos/1878095/pexels-photo-1878095.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-repeat: repeat-x;
+            
+       
+            }
+        .navbar {
+           
+            display: flex;
+           justify-content: space-between; 
+           
+        
+        }
+        .two1{
+            color: white;
+        }
+        h3{
+            color: white;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+            
+        }
+        input{
+            border-radius: 6px;
+            border-color: white;
+            font-size: 9px;
+            height: 20px;
+            width: 300px;
+            
+        }
+        .last{
+            display: flex;
+            color: white;
+            justify-content: flex-end ;
+        }
+        .boxx{
+            height: 25px;
+            width: 35px;
+            border: 1px solid whitesmoke;
+            align-content: center;
+            border-radius: 4px;
+            background-color: white;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h3> Pexels</h3>
+            <div class="icons">
+               <ul >
+                <li class="two1">
+                    <select name="" id="">
+                        <option value="">Explore</option>
+                        <option value="">Discover Photos</option>
+                        <option value="">Popular Searches</option>
+                        <option value="">Leaderboard</option>
+                        <option value="">Challenges</option>
+                        <option value="">Free Videos</option>
+                        <option value="">Pexeks Blog</option>
+                    
+                    </select>
+                </li>
+                <li class="two1">Liscence</li>
+                <li class="two1">Upload</li>
+                <li class="two1">
+                    <select name="" id="">
+                        <option value="">...</option>
+                        <option value="">Login in</option>
+                        <option value="">Join</option>
+                        <option value="">Change Language</option>
+                        <option value="">Image and Video API</option>
+                        <option value="">Apps & Plugins</option>
+                        <option value="">FAQ</option>
+                        <option value="">Report content</option>
+                        <option value="">Partnerships</option>
+                        <option value="">Imprint & Term</option>
+                    </select>
+                </li>
+                <li class="boxx">Join</li>
+               </ul>
+                
+            </div>
+            
+        </nav>
+        <div class="title">
+            <h3>The best stock photos, royalty free images <br> & videos shared by creators.</h3>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Search For Free Photos">
+        </div>
+        <div class="last">
+             photo by nothing ahead 
+        </div>
+    </header>
+    <div class="galerycat">
+        <ul>
+            <li>Home</li>
+            <li>Videos</li>
+            <li>Leaderboard</li>
+            <li>Challenges</li>
+        </ul>
+    </div>
+    <div class="subcat">
+        <h2>Free Stock Photos</h2>
+        <select name="" id="">
+            <option value="">Trending</option>
+            <option value="">New</option>
+        </select>
+    </div>
+    <div class="gallery">
+        <div class="items">
+            <img src="https://images.pexels.com/photos/27015904/pexels-photo-27015904/free-photo-of-a-goat-with-long-ears-and-a-long-face.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="goat">
+        </div>
+        <div class="items">
+            <img src="https://images.pexels.com/photos/11213182/pexels-photo-11213182.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="image">
+        </div>
+        <div class="items">
+            <img src="https://images.pexels.com/photos/28003976/pexels-photo-28003976/free-photo-of-a-reflection-of-a-church-in-a-building.png?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="image">
+        </div>
+        <div class="items">
+            <img src="https://images.pexels.com/photos/27035025/pexels-photo-27035025/free-photo-of-herd-of-horses-on-a-pasture-with-view-of-distant-mountains.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="image">
+        </div>
+        <div class="items">
+            <img src="https://images.pexels.com/photos/23105887/pexels-photo-23105887/free-photo-of-ocean-waves-crashing-against-a-rock-arch.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="image">
+        </div>
+        <div class="items">
+            <img src="https://images.pexels.com/photos/27757764/pexels-photo-27757764/free-photo-of-a-view-of-the-mountains-from-a-mountain-top.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="image">
+        </div>
+        <div class="items">
+            <img src="https://images.pexels.com/photos/18577252/pexels-photo-18577252/free-photo-of-sailboat-and-yacht-moored-in-harbor.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="image">
+        </div>
+        <div class="items">
+            <img src="https://images.pexels.com/photos/27954881/pexels-photo-27954881/free-photo-of-a-woman-in-a-white-dress-and-hat-on-a-balcony.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="image">
+        </div>
+        <div class="items">
+            <img src="https://images.pexels.com/photos/21245316/pexels-photo-21245316/free-photo-of-potted-cactus-plant.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="image">
+        </div>
+        <div class="items">
+            <img src="https://images.pexels.com/photos/11213182/pexels-photo-11213182.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="image">
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 2px solid black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav-global nav-global nav-global"
+                "page-title page-title nav-local"
+                "content1 content1 nav-local"
+                "content2 content3 sidebar"
+                "footer footer footer";
+            grid-template-columns: 2fr 2fr 1fr;
+            grid-template-rows: 40px auto auto 200px 200px;
+            
+            height: 100vh;
+            
+            text-align: center;
+           
+            
+        }
+        .grid-container div{
+          display: flex;  
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: lightblue;
+            border: 2px solid black;
+            text-align: center;
+            
+
+        }
+
+        .nav-global {
+            grid-area: nav-global;
+            background-color: lightsteelblue;
+            border: 2px solid black;
+        }
+
+        .page-title {
+            grid-area: page-title;
+            background-color: lightcoral;
+            border: 2px solid black;
+        }
+
+        .nav-local {
+            grid-area: nav-local;
+            background-color:rgb(231, 247, 8);
+            border: 2px solid black;
+        }
+
+        .content1 {
+            grid-area: content1;
+            background-color: peachpuff;
+            border: 2px solid black;
+        }
+
+        .content2 {
+            grid-area: content2;
+            background-color: peachpuff;
+            border: 2px solid black;
+        }
+
+        .content3 {
+            grid-area: content3;
+            background-color: peachpuff;
+            border: 2px solid black;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: rgb(231, 247, 8);
+            border: 2px solid black;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: lightgrey;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">#Header</div>
+        <div class="nav-global">#Nav Global</div>
+        <div class="page-title">#Page Title</div>
+        <div class="nav-local">#Nav Local</div>
+        <div class="content1">#Content 1</div>
+        <div class="content2">#Content 2</div>
+        <div class="content3">#Content 3</div>
+        <div class="sidebar">#Sidebar</div>
+        <div class="footer">#Footer</div>
+    </div>
+
+</body>
+
+</html>

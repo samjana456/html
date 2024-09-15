@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridcontainer{
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "hero maincontent maincontent "
+            "Slidebar maincontent maincontent"
+            "Slidebar extracontent extracontent"
+            "relatedimages relatedimages relatedposts"
+            "footer footer footer";
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 40px 100px 60px 70px 80px 40px;
+            text-align: center;
+            color: aliceblue;
+            gap: 4px;
+
+        }
+        .gridcontainer div{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .footer{
+            grid-area: footer;
+            /* border: 2px solid black; */
+            background-color: orange;
+        }
+        .relatedposts{
+            grid-area: relatedposts;
+            /* border: 2px solid black; */
+            background-color: palevioletred;
+        }
+        .relatedimages{
+            grid-area: relatedimages;
+            /* border: 2px solid black; */
+            background-color: greenyellow;
+        }
+        .extracontent{
+            grid-area: extracontent;
+            /* border: 2px solid black; */
+            background-color: plum;
+        }
+        .Slidebar{
+            grid-area: Slidebar;
+            /* border: 2px solid black; */
+            background-color: green;
+        }
+        .maincontent{
+            
+            flex-direction: column;
+            grid-area: maincontent;
+            /* border: 2px solid black; */
+            background-color: orange;
+        }
+        .hero{
+            grid-area: hero;
+            /* border: 2px solid black; */
+            background-color:purple;
+        }
+        .header{
+            grid-area: header;
+            /* border: 2px solid black; */
+            background-color:blue;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="gridcontainer">
+        <div class="header">Header</div>
+        <div class="hero">Hero</div>
+        <div class="maincontent">
+            Main Content 
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, nostrum.</p>
+        </div>
+        <div class="Slidebar">Slidebar</div>
+        <div class="extracontent">Extra Content</div>
+        <div class="relatedimages">Related Images</div>
+        <div class="relatedposts">Related Posts</div>
+        <div class="footer">Footer</div>
+
+    </div>
+</body>
+
+</html>
